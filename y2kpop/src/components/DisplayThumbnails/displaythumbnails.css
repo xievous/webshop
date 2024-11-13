@@ -1,0 +1,36 @@
+.carouselContainer {
+  margin: auto;
+  position: relative;
+  width: 70vw;
+}
+
+.sliderWrapper {
+  overflow: hidden;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.prev-arrow {
+  left: -60px;
+}
+
+.next-arrow {
+  right: -60px;
+}

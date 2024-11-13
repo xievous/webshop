@@ -1,0 +1,111 @@
+/* MegaMenu.css */
+.mega-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+.main-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu-link {
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+
+.menu-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  transform-origin: left;
+  animation: underline 0.3s ease-in-out forwards;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Full-width dropdown positioned below the entire nav */
+/* Dropdown Styling */
+.dropdown {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+
+  /* Hidden initially for transition effect */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
+}
+
+/* Apply the open state for dropdown */
+.dropdown.open {
+  max-height: 400px; /* Adjust to fit dropdown content */
+  opacity: 1;
+}
+
+.dropdown-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.dropdown-section {
+  width: 100%;
+  margin: auto;
+}
+
+.dropdown-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.dropdown-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-section li {
+  margin-bottom: 8px;
+}
+
+.dropdown-section a {
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-section a:hover {
+  text-decoration: underline;
+}

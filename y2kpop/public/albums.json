@@ -1,0 +1,182 @@
+[
+  {
+    "album_id": "003",
+    "artist": "NewJeans",
+    "album_name": "New Jeans",
+    "release_date": "2022-08-01",
+    "price": 19.99,
+    "cover_image": "images/new_jeans.jpg",
+    "tracks": ["Attention", "Hype Boy", "Cookie"]
+  },
+  {
+    "album_id": "004",
+    "artist": "Aespa",
+    "album_name": "Savage",
+    "release_date": "2021-10-05",
+    "price": 21.99,
+    "cover_image": "images/savage.jpg",
+    "tracks": ["Next Level", "Savage", "Illusion"]
+  },
+  {
+    "album_id": "005",
+    "artist": "LeSserafim",
+    "album_name": "FEARLESS",
+    "release_date": "2022-05-02",
+    "price": 18.49,
+    "cover_image": "images/fearless.jpg",
+    "tracks": ["Fearless", "Blue Flame", "The World is My Oyster"]
+  },
+  {
+    "album_id": "006",
+    "artist": "Twice",
+    "album_name": "Formula of Love: O+T=<3",
+    "release_date": "2021-11-12",
+    "price": 19.49,
+    "cover_image": "images/formula_of_love.jpg",
+    "tracks": ["The Feels", "Scientist", "Cruel"]
+  },
+  {
+    "album_id": "007",
+    "artist": "G-(i)dle",
+    "album_name": "I Love",
+    "release_date": "2022-10-17",
+    "price": 18.99,
+    "cover_image": "images/i_love.jpg",
+    "tracks": ["Tomboy", "My Bag", "Violeta"]
+  },
+  {
+    "album_id": "008",
+    "artist": "IVE",
+    "album_name": "After LIKE",
+    "release_date": "2022-08-22",
+    "price": 18.79,
+    "cover_image": "images/after_like.jpg",
+    "tracks": ["After LIKE", "Smash", "Royal"]
+  },
+  {
+    "album_id": "009",
+    "artist": "Kiss of Life",
+    "album_name": "Kiss of Life",
+    "release_date": "2023-06-14",
+    "price": 19.99,
+    "cover_image": "images/kiss_of_life.jpg",
+    "tracks": ["Shine On", "Goodbye", "Love Me"]
+  },
+  {
+    "album_id": "010",
+    "artist": "Seventeen",
+    "album_name": "Seventeen 9th Mini Album: Attacca",
+    "release_date": "2021-10-22",
+    "price": 21.99,
+    "cover_image": "images/attacca.jpg",
+    "tracks": ["Rock With You", "Crush", "Imperfect Love"]
+  },
+  {
+    "album_id": "011",
+    "artist": "Stray Kids",
+    "album_name": "MAXIDENT",
+    "release_date": "2022-10-07",
+    "price": 20.99,
+    "cover_image": "images/maxident.jpg",
+    "tracks": ["Case 143", "Cheese", "Thunderous"]
+  },
+  {
+    "album_id": "012",
+    "artist": "Itzy",
+    "album_name": "Checkmate",
+    "release_date": "2022-07-15",
+    "price": 18.99,
+    "cover_image": "images/checkmate.jpg",
+    "tracks": ["Sneakers", "Free Fall", "Boys Like You"]
+  },
+  {
+    "album_id": "013",
+    "artist": "NewJeans",
+    "album_name": "OMG",
+    "release_date": "2023-01-02",
+    "price": 18.99,
+    "cover_image": "images/omg.jpg",
+    "tracks": ["OMG", "Ditto", "Hurt"]
+  },
+  {
+    "album_id": "014",
+    "artist": "Aespa",
+    "album_name": "Girls",
+    "release_date": "2022-07-08",
+    "price": 19.49,
+    "cover_image": "images/girls.jpg",
+    "tracks": ["Girls", "Life's Too Short", "Illusion"]
+  },
+  {
+    "album_id": "015",
+    "artist": "LeSserafim",
+    "album_name": "Antifreeze",
+    "release_date": "2023-04-23",
+    "price": 19.49,
+    "cover_image": "images/antifreeze.jpg",
+    "tracks": ["Antifreeze", "Fearless", "Burn"]
+  },
+  {
+    "album_id": "016",
+    "artist": "Twice",
+    "album_name": "Taste of Love",
+    "release_date": "2021-06-09",
+    "price": 17.99,
+    "cover_image": "images/taste_of_love.jpg",
+    "tracks": ["Alcohol-Free", "Perfect World", "First Time"]
+  },
+  {
+    "album_id": "017",
+    "artist": "G-(i)dle",
+    "album_name": "I Never Die",
+    "release_date": "2022-04-11",
+    "price": 19.49,
+    "cover_image": "images/i_never_die.jpg",
+    "tracks": ["Oh My God", "Tomboy", "Liar"]
+  },
+  {
+    "album_id": "018",
+    "artist": "IVE",
+    "album_name": "LOVE DIVE",
+    "release_date": "2022-04-05",
+    "price": 17.99,
+    "cover_image": "images/love_dive.jpg",
+    "tracks": ["Love Dive", "Eleven", "Kitsch"]
+  },
+  {
+    "album_id": "019",
+    "artist": "Kiss of Life",
+    "album_name": "Heaven",
+    "release_date": "2023-08-19",
+    "price": 19.99,
+    "cover_image": "images/heaven.jpg",
+    "tracks": ["Heaven", "Euphoria", "Bliss"]
+  },
+  {
+    "album_id": "020",
+    "artist": "Seventeen",
+    "album_name": "Power of Love",
+    "release_date": "2023-09-12",
+    "price": 20.99,
+    "cover_image": "images/power_of_love.jpg",
+    "tracks": ["Power of Love", "Falling", "Tomorrow"]
+  },
+  {
+    "album_id": "021",
+    "artist": "Stray Kids",
+    "album_name": "Go Live",
+    "release_date": "2020-06-17",
+    "price": 20.49,
+    "cover_image": "images/golive.jpg",
+    "tracks": ["God's Menu", "Back Door", "TMT"]
+  },
+  {
+    "album_id": "022",
+    "artist": "Itzy",
+    "album_name": "Crazy in Love",
+    "release_date": "2021-09-24",
+    "price": 19.49,
+    "cover_image": "images/crazy_in_love.jpg",
+    "tracks": ["Loco", "Cheshire", "Sneakers"]
+  }
+]
