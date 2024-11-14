@@ -1,0 +1,128 @@
+* Container Styles */ .latestContainer {
+  background-color: #9fb8d2;
+  width: 100%;
+  margin: 3% auto;
+  border-top: 1px black solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.sliderWrapper {
+  overflow: hidden;
+}
+
+.carouselHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1em;
+  padding: 0 1em;
+}
+
+.carouselHeader h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Slide Styles */
+
+.latestSlide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: auto; /* Adjusted to let content determine height */
+  padding-bottom: 20px; /* Adds space for buttons */
+}
+
+.latestSlide .carouselImage {
+  width: 80%;
+  height: auto;
+  max-height: 600px;
+  display: block;
+  border-radius: 20px;
+  margin: auto;
+  position: relative;
+}
+
+.latestInfo {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+}
+
+.artist {
+  margin-right: auto;
+}
+
+.album {
+  margin-left: auto;
+}
+
+.latestSlide .buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  bottom: 0; /* Position buttons at the bottom of the image */
+  left: 50%;
+  transform: translate(-50%, 100%); /* Start just below the image */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+  z-index: 1; /* Ensures buttons appear above the image */
+}
+
+/* Show buttons on hover */
+.latestSlide:hover .buttonContainer {
+  transform: translate(-50%, 0); /* Move up from the bottom of the image */
+  opacity: 1;
+}
+
+.latestSlide:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.viewDetails,
+.shopNow {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.viewDetails:hover,
+.shopNow:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.05);
+}
+
+/* Arrow Styles */
+.arrowContainer {
+  display: flex;
+  gap: 10px;
+  margin: 1%;
+}
+
+.latestArrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.latestArrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

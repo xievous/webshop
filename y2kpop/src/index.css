@@ -12,3 +12,12 @@
   font-family: attention;
   src: url(../fonts/village-font/Village-wLn3.ttf);
 }
+
+@font-face {
+  font-family: savage;
+  src: url(../fonts/aespa-cufonfonts/aespa_Display.ttf);
+}
+
+body {
+  background-color: #cfcfcf;
+}

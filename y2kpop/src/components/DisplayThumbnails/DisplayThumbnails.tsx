@@ -44,6 +44,7 @@ const DisplayThumbnails: React.FC = () => {
 
   return (
     <section className="carouselContainer">
+      <h1>DISCOVER</h1>
       <Slider {...settings}>
         <div className="carouselSlide">
           <h1>NewJeans</h1>
@@ -54,7 +55,7 @@ const DisplayThumbnails: React.FC = () => {
           </div>
         </div>
         <div className="carouselSlide">
-          <h1>Aespa</h1>
+          <h1 id="aespaLogo">Aespa</h1>
           <img src={aespaImage} alt="Aespa" className="carouselImage" />
           <div className="buttonContainer">
             <button className="viewDetails">View Details</button>
