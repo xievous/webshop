@@ -3,5 +3,12 @@
   src: url(../fonts/planet_kosmos/PLANK___.TTF);
 }
 
-body {
+@font-face {
+  font-family: crazy;
+  src: url(../fonts/Roboto-Bold-Condensed/Roboto-BoldCondensed.ttf);
+}
+
+@font-face {
+  font-family: attention;
+  src: url(../fonts/village-font/Village-wLn3.ttf);
 }
