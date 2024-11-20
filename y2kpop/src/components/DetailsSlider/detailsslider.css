@@ -1,0 +1,164 @@
+/* General layout */
+.detailsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Slider section with header */
+.sliderSection {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.sliderHeader {
+  border-top: 1px black solid;
+  border-right: black solid 1px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; /* Space between header and slider */
+  width: 80%;
+}
+
+.productId {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Arrow container */
+.arrowContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.latestArrow {
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.latestArrow:hover {
+  color: #e63946; /* Change color on hover */
+}
+
+/* Slider container */
+.sliderContainer {
+  position: relative;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Description section */
+.descriptionContainer {
+  flex: 1 1 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.productTitle h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.productTitle h3 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.productPrice h1 {
+  font-size: 2rem;
+  color: #e63946;
+}
+
+/* Version buttons */
+.versionButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.versionButton {
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.versionButton.active {
+  border-color: #e63946;
+  background-color: #e63946;
+  color: white;
+}
+
+/* Quantity and Add to Cart */
+.productFinalize {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantityButton {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quantityButton:hover {
+  background-color: #ccc;
+}
+
+.quantityValue {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  width: 30px;
+  text-align: center;
+}
+
+.addToCart {
+  padding: 15px 30px;
+  background-color: #e63946;
+  color: white;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.addToCart:hover {
+  background-color: #c71f2d;
+}

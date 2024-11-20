@@ -7,7 +7,7 @@
   border-bottom: 1px solid black;
   padding: 10px 20px;
   z-index: 1000;
-  background-color: #9fb8d2;
+  background: linear-gradient(to bottom, #9FB8D2, #7399B3);
 }
 .main-menu {
   display: flex;
@@ -54,14 +54,12 @@
   position: absolute;
   left: 0;
   right: 0;
-  width: 100%;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   display: flex;
   justify-content: center;
   z-index: 999;
-
   /* Hidden initially for transition effect */
   max-height: 0;
   overflow: hidden;

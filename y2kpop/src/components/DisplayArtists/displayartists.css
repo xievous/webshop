@@ -1,0 +1,63 @@
+.artistsContainer {
+    border-top: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #9FB8D2, #7399B3);
+    font-family: crazy;
+}
+
+.artistsContainer .carouselHeader {
+    width: 100%;
+}
+
+  .artistsGrid {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width: 80%;
+ 
+  }
+  
+  .viewAllButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    height: 40px;
+    width: 12.5%;
+
+  }
+
+  .artistButton {
+    display: inline-block;
+    margin: 1%;
+    padding: 10px 20px;
+    height: 40px;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border: 1px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .artistButton:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  .artistButton:active {
+    background-color: #003f7f; /* Even darker when clicked */
+  }
+  

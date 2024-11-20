@@ -19,5 +19,11 @@
 }
 
 body {
-  background-color: #cfcfcf;
+  margin: 0;
+  background:linear-gradient(to bottom, #E0E0E0, #CFCFCF)
+}
+
+html {
+  scroll-behavior: smooth;
+
 }

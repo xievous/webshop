@@ -1,90 +1,139 @@
-* Container Styles */ .latestContainer {
-  background-color: #9fb8d2;
+/* General Container Styles */
+.latestContainer {
+  background: linear-gradient(to bottom, #9FB8D2, #7399B3);
   width: 100%;
-  margin: 3% auto;
+  margin: auto;
   border-top: 1px black solid;
   position: relative;
   overflow: hidden;
+  font-size: clamp(0.2rem, 1vw, 1rem); /* Responsive font size */
+  font-family: crazy;
 }
 
-.sliderWrapper {
-  overflow: hidden;
+.carousel-container {
+  width: 80%;
+  margin: auto;
 }
 
+/* Carousel Header */
 .carouselHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1em;
-  padding: 0 1em;
+  border-bottom: 1px solid black;
 }
 
 .carouselHeader h1 {
   font-size: 2rem;
+  margin: 0 0 0 1%
+}
+
+/* Slider Wrapper */
+.sliderWrapper,
+.slick-slider {
+  overflow: hidden;
+}
+
+/* Slider and Slide Styles */
+.latestSlider {
+  display: flex !important; 
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;  /* Or min-height: 300px; to define a minimum height */
+}
+
+
+
+/* Product Slider */
+.product-slider {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.product-card {
+  position: relative;
+  flex: 0 0 auto;
+  width: 300px;
+  text-align: center;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1%;
+}
+
+.product-info h1 {
   margin: 0;
 }
 
-/* Slide Styles */
-
-.latestSlide {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  height: auto; /* Adjusted to let content determine height */
-  padding-bottom: 20px; /* Adds space for buttons */
+.product-info h3 {
+  margin-top: 0;
 }
 
-.latestSlide .carouselImage {
+/* Image Container and Styling */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+}
+
+
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80%;
   height: auto;
-  max-height: 600px;
-  display: block;
-  border-radius: 20px;
-  margin: auto;
-  position: relative;
-}
-
-.latestInfo {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  width: 80%;
-}
-
-.artist {
-  margin-right: auto;
-}
-
-.album {
-  margin-left: auto;
-}
-
-.latestSlide .buttonContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: absolute;
-  bottom: 0; /* Position buttons at the bottom of the image */
-  left: 50%;
-  transform: translate(-50%, 100%); /* Start just below the image */
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  opacity: 0;
-  z-index: 1; /* Ensures buttons appear above the image */
-}
-
-/* Show buttons on hover */
-.latestSlide:hover .buttonContainer {
-  transform: translate(-50%, 0); /* Move up from the bottom of the image */
-  opacity: 1;
-}
-
-.latestSlide:hover {
-  transform: scale(1.05);
+  border-radius: 8px;
   transition: transform 0.3s ease;
 }
 
+.latestSlider:hover .product-image {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+  position: absolute;
+  bottom: 1%; /* Start below the container */
+  left: 62%;
+  padding: 8px 16px;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0; /* Initially hidden */
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+.latestSlider:hover .add-to-cart {
+  bottom: 10px; /* Slide up into view */
+  opacity: 1; /* Fade in */
+}
+
+/* Latest Info Styling */
+.latestInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+  font-size: clamp(0.4rem, 1vw, 0.6rem); /* Responsive font size */
+}
+
+/* Buttons: View Details and Shop Now */
 .viewDetails,
 .shopNow {
   padding: 10px 20px;
@@ -102,7 +151,7 @@
   transform: scale(1.05);
 }
 
-/* Arrow Styles */
+/* Navigation Arrows */
 .arrowContainer {
   display: flex;
   gap: 10px;
@@ -125,4 +174,14 @@
 
 .latestArrow:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Slider Track and Thumb */
+.slider-track {
+  display: flex;
+  gap: 16px;
+}
+
+.slider-thumb {
+  display: none; /* Remove dots */
 }

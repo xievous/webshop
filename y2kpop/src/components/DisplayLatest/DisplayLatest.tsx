@@ -1,11 +1,12 @@
 import React, { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import Slider, { Settings } from "react-slick";
 import "./displaylatest.css";
 import howsweet from "../../assets/products/howsweetCover.jpg";
 import whiplash from "../../assets/products/whiplashCover.jpg";
 import crazy from "../../assets/products/crazyCover.jpg";
 import loseyourself from "../../assets/products/loseyourselfCover.jfif";
-import shopIcon from "../../assets/icons/shop.png";
+
 interface ArrowProps {
   onClick?: () => void;
 }
@@ -18,7 +19,6 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
   );
 };
 
-// Custom Prev Arrow
 const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
   return (
     <div className="latestArrow latestPrevArrow" onClick={onClick}>
@@ -29,6 +29,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
 
 const DisplayLatest: React.FC = () => {
   const sliderRef = useRef<Slider>(null);
+  const navigate = useNavigate();
 
   const settings: Settings = {
     dots: false,
@@ -37,6 +38,10 @@ const DisplayLatest: React.FC = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
+  };
+
+  const handleSlideClick = (productId: string) => {
+    navigate(`/details/${productId}`); // Navigate to the details page
   };
 
   return (
@@ -49,62 +54,59 @@ const DisplayLatest: React.FC = () => {
         </div>
       </header>
       <Slider ref={sliderRef} {...settings}>
-        <div className="latestSlide">
-          <img src={howsweet} alt="NewJeans" className="carouselImage" />
+        <div className="latestSlider" onClick={() => handleSlideClick("howsweet")}>
+          <div className="image-container">
+            <img src={howsweet} className="product-image" alt="How Sweet" />
+            <button className="add-to-cart">Add to Cart</button>
+          </div>
+          <div className="product-info">
+            <h1>HOW SWEET</h1>
+            <h1>NEW JEANS</h1>
+          </div>
+          <div className="product-info">
+            <h3>209KR</h3>
+          </div>
+        </div>
 
-          <div className="buttonContainer">
-            <button className="viewDetails">View Details</button>
-            <button className="shopNow">Shop Now</button>
+        <div className="latestSlider" onClick={() => handleSlideClick("whiplash")}>
+          <div className="image-container">
+            <img src={whiplash} className="product-image" alt="Whiplash" />
+            <button className="add-to-cart">Add to Cart</button>
           </div>
-          <div className="latestInfo">
-            <h1 className="artist">NEWJEANS</h1>
-            <h1 className="album">HOW SWEET</h1>
+          <div className="product-info">
+            <h1>WHIPLASH</h1>
+            <h1>AESPA</h1>
           </div>
-          <div className="latestInfo">
-            <h1>209KR</h1>
+          <div className="product-info">
+            <h3>259KR</h3>
           </div>
         </div>
-        <div className="latestSlide">
-          <img src={whiplash} alt="Aespa" className="carouselImage" />
-          <div className="buttonContainer">
-            <button className="viewDetails">View Details</button>
-            <button className="shopNow">Shop Now</button>
-          </div>
 
-          <div className="latestInfo">
-            <h1 className="artist">AESPA</h1>
-            <h1 className="album">WHIPLASH</h1>
+        <div className="latestSlider" onClick={() => handleSlideClick("crazy")}>
+          <div className="image-container">
+            <img src={crazy} className="product-image" alt="Crazy" />
+            <button className="add-to-cart">Add to Cart</button>
           </div>
-          <div className="latestInfo">
-            <h1>259KR</h1>
+          <div className="product-info">
+            <h1>CRAZY</h1>
+            <h1>LE SSERAFIM</h1>
           </div>
-        </div>
-        <div className="latestSlide">
-          <img src={crazy} alt="Lesserafim" className="carouselImage" />
-          <div className="buttonContainer">
-            <button className="viewDetails">View Details</button>
-            <button className="shopNow">Shop Now</button>
-          </div>
-          <div className="latestInfo">
-            <h1 className="artist">LE SSERAFIM</h1>
-            <h1 className="album">CRAZY</h1>
-          </div>
-          <div className="latestInfo">
-            <h1>219KR</h1>
+          <div className="product-info">
+            <h3>229KR</h3>
           </div>
         </div>
-        <div className="latestSlide">
-          <img src={loseyourself} alt="KissOfLife" className="carouselImage" />
-          <div className="buttonContainer">
-            <button className="viewDetails">View Details</button>
-            <button className="shopNow">Shop Now</button>
+
+        <div className="latestSlider" onClick={() => handleSlideClick("loseyourself")}>
+          <div className="image-container">
+            <img src={loseyourself} className="product-image" alt="Lose Yourself" />
+            <button className="add-to-cart">Add to Cart</button>
           </div>
-          <div className="latestInfo">
-            <h1 className="artist">KISS OF LIFE</h1>
-            <h1 className="album">LOSE YOURSELF</h1>
+          <div className="product-info">
+            <h1>LOSE YOURSELF</h1>
+            <h1>KISS OF LIFE</h1>
           </div>
-          <div className="latestInfo">
-            <h1 className="artist ">299KR</h1>
+          <div className="product-info">
+            <h3>299KR</h3>
           </div>
         </div>
       </Slider>
