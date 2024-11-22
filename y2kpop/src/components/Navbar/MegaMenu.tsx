@@ -1,12 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./megamenu.css";
 import { MegaMenuProps } from "../../assets/types/types";
+import { useNavigate } from "react-router-dom";
 
 const MegaMenu: React.FC<MegaMenuProps> = ({ items }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [dropdownTop, setDropdownTop] = useState(0);
   const [isSearchActive, setIsSearchActive] = useState(false);
   const navRef = useRef<HTMLDivElement | null>(null);
+  const navigate = useNavigate();
 
   const handleToggleDropdown = () => {
     setIsDropdownOpen((prev) => !prev);
@@ -25,7 +27,9 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ items }) => {
 
   return (
     <nav className="mega-menu" ref={navRef}>
-      <span className="logo">y2kpop</span>
+      <span onClick={() => navigate("/")} className="logo">
+        y2kpop
+      </span>
       <div className="main-menu-components">
         {/* Main Menu */}
         <ul className="main-menu">
@@ -45,6 +49,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ items }) => {
           ))}
         </ul>
         <svg
+          onClick={() => navigate("/overview")}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 576 512"
           width="24"

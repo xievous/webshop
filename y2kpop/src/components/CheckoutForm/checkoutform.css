@@ -1,0 +1,117 @@
+.checkoutFormContainer {
+  font-family: crazy;
+  width: 40%;
+  margin: 2%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5%;
+  background-color: #f9f9f9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+}
+
+.checkoutFormContainer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Ensure the name and postal containers use flex and have the correct space distribution */
+.name,
+.postal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.name input,
+.postal input {
+  width: 48%; /* Make sure both inputs have equal width, leaving a little space */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.formField {
+  margin-bottom: 3%;
+}
+
+/* All inputs have consistent styling */
+.formField input {
+  width: 100%; /* Ensures all inputs take the full width of their parent container */
+  padding: 0.75rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-sizing: border-box; /* Ensures that padding and border are included in the width */
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.radioGroup label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.shippingRadio {
+  display: flex;
+  font-size: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.formActions button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formActions button:hover {
+  background-color: #333;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.postal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Ensure inputs inside .name and .postal remain aligned */
+.name input,
+.postal input {
+  width: 48%; /* Equal width for inputs */
+  box-sizing: border-box;
+}
+
+/* Optional: You can add margin to the .formField container if needed */
+.formField {
+  margin-bottom: 3%;
+}
+
+.shippingCompany {
+  width: 10%;
+}
+
+.shippingRadio input {
+  width: 20px;
+}
+
+.formField {
+  margin-top: 3%;
+}

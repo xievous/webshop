@@ -1,0 +1,86 @@
+.checkoutSummaryContainer {
+  font-family: crazy;
+  width: 60%;
+  margin: 2%;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  height: fit-content;
+}
+
+.checkoutSummaryHeader {
+  font-size: clamp(1rem, 2vw, 3rem); /* Responsive font size */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.checkoutSummaryCards {
+  margin-bottom: 20px;
+}
+
+.productCard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.productCard .productInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.productCard h2,
+.productCard h3 {
+  margin: 5px 0;
+}
+
+.discountSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.discountInput {
+  padding: 10px;
+  width: 75%;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.applyDiscountBtn {
+  width: 20%;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.priceSummary {
+  margin-top: 20px;
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(0.8rem, 1vw, 1.5rem); /* Responsive font size */
+  margin-bottom: 10px;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(1rem, 2vw, 2rem); /* Larger font for total */
+  font-weight: bold;
+  margin-top: 20px;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}

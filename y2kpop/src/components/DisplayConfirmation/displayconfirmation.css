@@ -1,0 +1,92 @@
+.confirmationPageContainer {
+  font-family: crazy;
+  width: 70%;
+  margin: 3% auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.confirmationHeader {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.confirmationHeader h1 {
+  font-size: clamp(1.5rem, 3vw, 3.5rem); /* Responsive font size */
+  color: #333;
+}
+
+.confirmationHeader p {
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+  color: #777;
+}
+
+.orderSummaryContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.orderDetailsCard,
+.shippingDetailsCard,
+.orderSummaryCard {
+  margin: 1%;
+  width: 48%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.orderDetailsCard h2,
+.shippingDetailsCard h2,
+.orderSummaryCard h2 {
+  font-size: clamp(1.2rem, 2vw, 2.5rem);
+  margin-bottom: 15px;
+}
+
+.orderDetailsRow,
+.shippingDetailsRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.orderDetailsRow span,
+.shippingDetailsRow span {
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+  color: #555;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-bottom: 10px;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.continueShoppingBtn {
+  width: 100%;
+  padding: 10px;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.continueShoppingBtn:hover {
+  background-color: #333;
+}
