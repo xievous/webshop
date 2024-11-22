@@ -16,7 +16,7 @@
   margin-right: 1%;
   max-height: 150px;
 
-  height: auto; /* Ensure it adjusts dynamically if content is smaller */
+  height: auto;
 }
 
 .rowImage {
@@ -56,7 +56,7 @@
 }
 
 .rowPrice {
-  font-size: clamp(0.5rem, 1vw, 2rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 2rem);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,7 +68,7 @@
 }
 
 .productDescription h1 {
-  font-size: clamp(0.5rem, 1vw, 1.5rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
   margin-bottom: 10px;
 }
 
@@ -82,11 +82,11 @@
 }
 
 .productQuantity {
-  width: 30%; /* Adjust width as needed */
+  width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center content */
-  align-items: center; /* Horizontally center content */
+  justify-content: center;
+  align-items: center;
   margin-bottom: 1%;
 }
 
@@ -94,7 +94,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Fill available height */
+  height: 100%;
 }
 
 .amountButton {
@@ -104,11 +104,11 @@
   border-radius: 30px;
   border: 1px solid #ddd;
   background-color: #fff;
-  width: auto; /* Adjust width dynamically */
+  width: auto;
   padding: 8px;
 }
 .amountButton button {
-  font-size: clamp(0.5rem, 1vw, 1.5rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
   cursor: pointer;
   background: none;
   color: #333;
@@ -120,7 +120,7 @@
 
 .amountButton span {
   padding: 0 15px;
-  font-size: clamp(0.5rem, 1vw, 1rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 1rem);
   font-weight: bold;
 }
 
@@ -142,9 +142,8 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: clamp(0.5rem, 1vw, 1.5rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 1.5rem);
 }
-
 .totalPrice h1 {
   margin: 1%;
 }
@@ -161,9 +160,9 @@
   border: none;
   font: inherit;
   outline: none;
-  font-size: clamp(0.5rem, 1vw, 2rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 2rem);
   background-color: black;
-  height: 20%; /* or 50px */
+  height: 20%;
   min-height: 50px;
   border-radius: 10px;
 }
@@ -180,7 +179,7 @@
   font-family: crazy;
   min-height: 40px;
   margin: 1%;
-  font-size: clamp(0.5rem, 1vw, 5rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 5rem);
 }
 
 .overviewColumn h1 {

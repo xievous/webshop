@@ -1,34 +1,28 @@
-/* General Container Styles */
 .merchContainer {
-    width: 100%;
-    margin: auto;
-    border-top: 1px black solid;
-    position: relative;
-    overflow: hidden;
-    font-size: clamp(0.2rem, 1vw, 1rem); /* Responsive font size */
-    font-family: crazy;
-  }
-  
-  
-  /* Slider and Slide Styles */
-  .merchSlider {
-    display: flex !important; 
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
-    height: 100% !important;  /* Or min-height: 300px; to define a minimum height */
-  }
-  
-  
-  .merchSlider:hover .product-image {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
+  width: 100%;
+  margin: auto;
+  border-top: 1px black solid;
+  position: relative;
+  overflow: hidden;
+  font-size: clamp(0.2rem, 1vw, 1rem);
+  font-family: crazy;
+}
 
-  
-  .merchSlider:hover .add-to-cart {
-    bottom: 10px; /* Slide up into view */
-    opacity: 1; /* Fade in */
-  }
-  
+.merchSlider {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.merchSlider:hover .product-image {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.merchSlider:hover .add-to-cart {
+  bottom: 10px;
+  opacity: 1;
+}

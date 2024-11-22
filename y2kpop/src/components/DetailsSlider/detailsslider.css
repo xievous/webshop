@@ -1,35 +1,35 @@
 html,
 body,
 .detailsContainer {
-  height: 100%; /* Ensure the parent container occupies full height */
+  height: 100%;
 }
 
 .detailsContainer {
-  display: flex; /* Flexbox layout for equal column heights */
-  height: 100%; /* Full-height container */
+  display: flex;
+  height: 100%;
 }
 
 .sliderSection,
 .descriptionContainer {
-  height: 100%; /* Equal height for both containers */
-  display: flex; /* Allow content alignment */
-  flex-direction: column; /* Preserve existing layout */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .sliderContainer {
-  flex: 1; /* Stretch to fill available height */
-  display: flex; /* Maintain alignment */
-  flex-direction: column; /* Stack slider content vertically */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .imageSlider {
-  flex: 1; /* Allow the slider to grow and fill space */
+  flex: 1;
 }
 
 .detailsContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal columns */
-  overflow: hidden; /* Prevent overflowing content */
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
   font-family: crazy;
 }
 
@@ -37,12 +37,12 @@ body,
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden; /* Ensure no overflow within the slider */
+  overflow: hidden;
 }
 
 .sliderContainer {
   width: 100%;
-  overflow: hidden; /* Prevent images from spilling out */
+  overflow: hidden;
 }
 
 .sliderHeader {
@@ -68,13 +68,13 @@ body,
   margin-right: 1%;
 }
 
-.image-container {
+.imageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  width: 100%; /* Ensure image takes full width of the container */
+  width: 100%;
   margin: auto;
 }
 
@@ -82,12 +82,12 @@ body,
   border-left: 1px solid black;
   border-bottom: 1px solid black;
   padding: 3%;
-  position: relative; /* Make sure the slider has a position for arrows */
+  position: relative;
 }
 
-.detailsContainer .product-image {
-  width: 100%; /* Responsive */
-  height: auto; /* Keep aspect ratio */
+.detailsContainer .productImage {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +95,6 @@ body,
   transition: transform 0.3s ease;
 }
 
-/* Style for the custom arrows */
 .detailsContainer .latestArrow {
   position: absolute;
   top: 50%;
@@ -116,10 +115,9 @@ body,
   left: 10px;
 }
 
-/* Style for dots under the slider */
 .slick-dots {
   position: absolute;
-  bottom: -30px; /* Adjust spacing between dots and the image */
+  bottom: -30px;
   width: 100%;
   text-align: center;
 }
@@ -132,7 +130,7 @@ body,
 }
 
 .slick-dots li.slick-active button {
-  background-color: #000; /* Active dot */
+  background-color: #000;
 }
 
 .descriptionContainer {
@@ -169,13 +167,13 @@ body,
 }
 
 .large {
-  font-size: clamp(0.5rem, 1vw, 3rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 3rem);
   margin-bottom: 1%;
   margin-top: 1%;
 }
 
 .medium {
-  font-size: clamp(0.5rem, 1vw, 2rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 2rem);
   margin-bottom: 1%;
   margin-top: 1%;
 }
@@ -228,7 +226,7 @@ body,
   cursor: pointer;
   outline: inherit;
   cursor: pointer;
-  font-size: clamp(0.5rem, 1vw, 2rem); /* Responsive font size */
+  font-size: clamp(0.5rem, 1vw, 2rem);
   margin-right: 1%;
   margin-left: 1%;
 }

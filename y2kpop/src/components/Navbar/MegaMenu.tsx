@@ -15,7 +15,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ items }) => {
   };
 
   const handleToggleSearch = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Prevent toggling when clicking input or wrapper
+    e.stopPropagation();
     setIsSearchActive((prev) => !prev);
   };
 
@@ -31,7 +31,6 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ items }) => {
         y2kpop
       </span>
       <div className="main-menu-components">
-        {/* Main Menu */}
         <ul className="main-menu">
           {items.map((item) => (
             <li key={item.id} className="menu-item">
@@ -59,7 +58,6 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ items }) => {
           <path d="M528.12 301.319l47.273-189.09C580.259 93.567 567.979 80 552.651 80H132.84L123.12 33.52C120.519 19.735 108.041 10 94.121 10H24C10.746 10 0 20.746 0 34c0 13.254 10.746 24 24 24h60.121l65.92 263.68c.024.096.049.192.075.287 5.733 22.094 26.188 37.033 48.918 37.033H455.13c21.96 0 42.3-13.777 48.523-34.418l24.467-97.868c6.896-27.552-13.848-54.637-41.7-54.637H185.87L178.63 199.5h306.6c8.826 0 16.677 6.14 19.07 14.671l47.42 189.09zM200 400c-26.509 0-48 21.491-48 48s21.491 48 48 48 48-21.491 48-48-21.491-48-48-48zm240 0c-26.509 0-48 21.491-48 48s21.491 48 48 48 48-21.491 48-48-21.491-48-48-48z" />
         </svg>
 
-        {/* Search Wrapper */}
         <div
           className={`search-wrapper ${isSearchActive ? "active" : ""}`}
           onClick={handleToggleSearch}
@@ -84,11 +82,11 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ items }) => {
             type="text"
             className="search-input"
             placeholder="Search"
-            onClick={(e) => e.stopPropagation()} // Ensure input doesn't close the search
+            onClick={(e) => e.stopPropagation()}
           />
         </div>
       </div>
-      {/* Dropdown Menu */}
+
       <div
         className={`dropdown ${isDropdownOpen ? "open" : ""}`}
         style={{ top: dropdownTop }}

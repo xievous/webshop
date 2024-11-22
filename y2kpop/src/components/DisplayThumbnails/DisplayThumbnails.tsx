@@ -1,5 +1,5 @@
 import React from "react";
-import Slider, { Settings } from "react-slick"; // Import Slider and Settings type from react-slick
+import Slider, { Settings } from "react-slick";
 import "./displaythumbnails.css";
 import newJeansImage from "../../assets/images/newjeans_dashboard.jpeg";
 import aespaImage from "../../assets/images/aespa_dashboard.jpg";
@@ -26,7 +26,6 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
   );
 };
 
-// Main DisplayThumbnails Component
 const DisplayThumbnails: React.FC = () => {
   const settings: Settings = {
     dots: false,
@@ -35,8 +34,8 @@ const DisplayThumbnails: React.FC = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    nextArrow: <NextArrow />, // Use custom next arrow
-    prevArrow: <PrevArrow />, // Use custom prev arrow
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
   };
 
   return (

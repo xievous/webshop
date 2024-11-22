@@ -16,7 +16,7 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
     <div
       className="latestArrow latestNextArrow"
       onClick={(e) => {
-        e.stopPropagation(); // Prevent navigation
+        e.stopPropagation();
         if (onClick) onClick();
       }}
     >
@@ -30,7 +30,7 @@ const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
     <div
       className="latestArrow latestPrevArrow"
       onClick={(e) => {
-        e.stopPropagation(); // Prevent navigation
+        e.stopPropagation();
         if (onClick) onClick();
       }}
     >
@@ -53,7 +53,7 @@ const DisplayPreorder: React.FC = () => {
   };
 
   const handleSlideClick = (productId: string) => {
-    navigate(`/details/${productId}`); // Navigate to the details page
+    navigate(`/details/${productId}`);
   };
 
   return (

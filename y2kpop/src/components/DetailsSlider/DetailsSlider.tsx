@@ -66,14 +66,14 @@ const DetailsSlider: React.FC = () => {
         <div className="sliderContainer">
           <div className="imageSlider">
             <Slider ref={sliderRef} {...settings}>
-              <div className="image-container">
-                <img src={howsweet} className="product-image" alt="How Sweet" />
+              <div className="imageContainer">
+                <img src={howsweet} className="productImage" alt="How Sweet" />
               </div>
-              <div className="image-container">
-                <img src={howsweet} className="product-image" alt="How Sweet" />
+              <div className="imageContainer">
+                <img src={howsweet} className="productImage" alt="How Sweet" />
               </div>
-              <div className="image-container">
-                <img src={howsweet} className="product-image" alt="How Sweet" />
+              <div className="imageContainer">
+                <img src={howsweet} className="productImage" alt="How Sweet" />
               </div>
             </Slider>
           </div>

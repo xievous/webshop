@@ -57,8 +57,6 @@ ul li {
   }
 }
 
-/* Full-width dropdown positioned below the entire nav */
-/* Dropdown Styling */
 .dropdown {
   position: absolute;
   left: 0;
@@ -69,16 +67,15 @@ ul li {
   display: flex;
   justify-content: center;
   z-index: 999;
-  /* Hidden initially for transition effect */
+
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.5s ease;
 }
 
-/* Apply the open state for dropdown */
 .dropdown.open {
-  max-height: 400px; /* Adjust to fit dropdown content */
+  max-height: 400px;
   opacity: 1;
 }
 
@@ -117,27 +114,26 @@ ul li {
 .dropdown-section a:hover {
   text-decoration: underline;
 }
-/* MegaMenu Layout */
+
 .main-menu-components {
   display: flex;
-  align-items: center; /* Ensures vertical alignment */
+  align-items: center;
   position: relative;
-  justify-content: flex-start; /* Ensures all elements are aligned to the left */
-  gap: 20px; /* Adds space between the items (menu, icons, search) */
+  justify-content: flex-start;
+  gap: 20px;
 }
 .fa-shopping-cart {
   height: 24px;
   width: 24px;
-  display: inline-flex; /* Ensures alignment consistency */
+  display: inline-flex;
 }
 
-/* Position the Search Wrapper Inline */
 .search-wrapper {
   display: inline-flex;
   align-items: center;
   transition: all 0.5s ease;
-  height: 24px; /* Ensures same height as the icon */
-  overflow: hidden; /* Prevents empty space from being visible */
+  height: 24px;
+  overflow: hidden;
 }
 
 .search-input {
@@ -148,19 +144,19 @@ ul li {
   padding: 5px 10px;
   border: 1px solid black;
   border-radius: 4px;
-  height: 100%; /* Matches the height of the wrapper */
-  box-sizing: border-box; /* Prevents size overflow with padding */
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .search-wrapper.active {
-  width: auto; /* Allows the input to expand */
-  overflow: visible; /* Shows the input when active */
+  width: auto;
+  overflow: visible;
 }
 
 .search-wrapper.active .search-input {
   visibility: visible;
   opacity: 1;
-  width: 150px; /* Adjust as needed */
+  width: 150px;
 }
 
 .search-icon-wrapper {

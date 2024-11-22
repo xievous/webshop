@@ -42,7 +42,6 @@ const Checkout: React.FC = () => {
           </div>
         </div>
 
-        {/* Shipping Method */}
         <div>
           <h1>SHIPPING METHOD</h1>
           <div className="radioGroup">
@@ -79,7 +78,6 @@ const Checkout: React.FC = () => {
           </div>
         </div>
 
-        {/* Payment Method */}
         <div>
           <h1>PAYMENT METHOD</h1>
           <div className="shippingRadio">
@@ -120,7 +118,6 @@ const Checkout: React.FC = () => {
           </div>
         </div>
 
-        {/* Conditional Payment Forms */}
         {paymentMethod === "creditcard" && (
           <div className="formField">
             <label htmlFor="cardNumber">Card Number</label>
@@ -191,7 +188,6 @@ const Checkout: React.FC = () => {
           </div>
         )}
 
-        {/* Submit Button */}
         <div className="formActions">
           <button type="submit" onClick={() => navigate("/confirmation")}>
             PLACE ORDER

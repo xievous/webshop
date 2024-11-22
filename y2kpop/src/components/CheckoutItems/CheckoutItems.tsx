@@ -107,7 +107,6 @@ export default function CheckoutItems() {
           </div>
         </div>
 
-        {/* Discount Input Section */}
         <div className="discountSection">
           <input
             type="text"
@@ -117,19 +116,18 @@ export default function CheckoutItems() {
           <button className="applyDiscountBtn">Apply</button>
         </div>
 
-        {/* Price Summary */}
         <div className="priceSummary">
           <div className="priceRow">
             <span>Price of Products</span>
-            <span>478KR</span> {/* Example total of product prices */}
+            <span>478KR</span>
           </div>
           <div className="priceRow">
             <span>Shipping</span>
-            <span>50KR</span> {/* Example shipping cost */}
+            <span>50KR</span>
           </div>
           <div className="totalRow">
             <h2>Total</h2>
-            <h2>528KR</h2> {/* Example total after shipping */}
+            <h2>528KR</h2>
           </div>
         </div>
       </section>

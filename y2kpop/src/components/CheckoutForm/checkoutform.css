@@ -16,7 +16,6 @@
   margin-bottom: 1rem;
 }
 
-/* Ensure the name and postal containers use flex and have the correct space distribution */
 .name,
 .postal {
   display: flex;
@@ -26,23 +25,22 @@
 
 .name input,
 .postal input {
-  width: 48%; /* Make sure both inputs have equal width, leaving a little space */
-  box-sizing: border-box; /* Include padding and border in the width calculation */
+  width: 48%;
+  box-sizing: border-box;
 }
 
 .formField {
   margin-bottom: 3%;
 }
 
-/* All inputs have consistent styling */
 .formField input {
-  width: 100%; /* Ensures all inputs take the full width of their parent container */
+  width: 100%;
   padding: 0.75rem;
   border: 1px solid black;
   border-radius: 5px;
   font-size: 1rem;
   background-color: #fff;
-  box-sizing: border-box; /* Ensures that padding and border are included in the width */
+  box-sizing: border-box;
 }
 
 .radioGroup {
@@ -92,14 +90,12 @@
   width: 100%;
 }
 
-/* Ensure inputs inside .name and .postal remain aligned */
 .name input,
 .postal input {
-  width: 48%; /* Equal width for inputs */
+  width: 48%;
   box-sizing: border-box;
 }
 
-/* Optional: You can add margin to the .formField container if needed */
 .formField {
   margin-bottom: 3%;
 }

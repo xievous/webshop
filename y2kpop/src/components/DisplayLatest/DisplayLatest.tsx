@@ -41,7 +41,7 @@ const DisplayLatest: React.FC = () => {
   };
 
   const handleSlideClick = (productId: string) => {
-    navigate(`/details/${productId}`); // Navigate to the details page
+    navigate(`/details/${productId}`);
   };
 
   return (
