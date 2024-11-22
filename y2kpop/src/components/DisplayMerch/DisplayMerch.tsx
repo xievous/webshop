@@ -98,7 +98,7 @@ const DisplayMerch: React.FC = () => {
             <button className="add-to-cart">ADD TO CART</button>
           </div>
           <div className="product-info">
-            <h1></h1>
+            <h1>CRAZY</h1>
             <h1>LE SSERAFIM</h1>
           </div>
           <div className="product-info">

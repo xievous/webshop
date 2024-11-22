@@ -20,10 +20,11 @@
 
 body {
   margin: 0;
-  background:linear-gradient(to bottom, #E0E0E0, #CFCFCF)
+  background: linear-gradient(to bottom, #e0e0e0, #cfcfcf);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 html {
   scroll-behavior: smooth;
-
 }
