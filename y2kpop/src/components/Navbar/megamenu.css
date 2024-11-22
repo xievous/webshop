@@ -1,5 +1,6 @@
 /* MegaMenu.css */
 .mega-menu {
+  font-family: crazy;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -7,23 +8,31 @@
   border-bottom: 1px solid black;
   padding: 10px 20px;
   z-index: 1000;
-  background: linear-gradient(to bottom, #9FB8D2, #7399B3);
+  background: linear-gradient(to bottom, #9fb8d2, #7399b3);
 }
 .main-menu {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 1.25rem;
+}
+
+ul li a {
+  color: black;
 }
 
 .menu-item {
   position: relative;
-  margin-right: 20px;
+}
+
+ul li {
+  margin-bottom: 0;
 }
 
 .menu-link {
   text-decoration: none;
-  padding: 10px;
+  padding-bottom: 5px;
   position: relative;
 }
 
@@ -107,4 +116,62 @@
 
 .dropdown-section a:hover {
   text-decoration: underline;
+}
+/* MegaMenu Layout */
+.main-menu-components {
+  display: flex;
+  align-items: center; /* Ensures vertical alignment */
+  position: relative;
+  justify-content: flex-start; /* Ensures all elements are aligned to the left */
+  gap: 20px; /* Adds space between the items (menu, icons, search) */
+}
+.fa-shopping-cart {
+  height: 24px;
+  width: 24px;
+  display: inline-flex; /* Ensures alignment consistency */
+}
+
+/* Position the Search Wrapper Inline */
+.search-wrapper {
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.5s ease;
+  height: 24px; /* Ensures same height as the icon */
+  overflow: hidden; /* Prevents empty space from being visible */
+}
+
+.search-input {
+  visibility: hidden;
+  opacity: 0;
+  width: 0;
+  transition: visibility 0.5s ease, width 0.5s ease, opacity 0.5s ease;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  height: 100%; /* Matches the height of the wrapper */
+  box-sizing: border-box; /* Prevents size overflow with padding */
+}
+
+.search-wrapper.active {
+  width: auto; /* Allows the input to expand */
+  overflow: visible; /* Shows the input when active */
+}
+
+.search-wrapper.active .search-input {
+  visibility: visible;
+  opacity: 1;
+  width: 150px; /* Adjust as needed */
+}
+
+.search-icon-wrapper {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-icon-wrapper svg {
+  height: 24px;
+  width: 24px;
 }

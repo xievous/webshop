@@ -54,7 +54,10 @@ const DisplayLatest: React.FC = () => {
         </div>
       </header>
       <Slider ref={sliderRef} {...settings}>
-        <div className="latestSlider" onClick={() => handleSlideClick("howsweet")}>
+        <div
+          className="latestSlider"
+          onClick={() => handleSlideClick("howsweet")}
+        >
           <div className="image-container">
             <img src={howsweet} className="product-image" alt="How Sweet" />
             <button className="add-to-cart">Add to Cart</button>
@@ -68,7 +71,10 @@ const DisplayLatest: React.FC = () => {
           </div>
         </div>
 
-        <div className="latestSlider" onClick={() => handleSlideClick("whiplash")}>
+        <div
+          className="latestSlider"
+          onClick={() => handleSlideClick("whiplash")}
+        >
           <div className="image-container">
             <img src={whiplash} className="product-image" alt="Whiplash" />
             <button className="add-to-cart">Add to Cart</button>
@@ -96,9 +102,16 @@ const DisplayLatest: React.FC = () => {
           </div>
         </div>
 
-        <div className="latestSlider" onClick={() => handleSlideClick("loseyourself")}>
+        <div
+          className="latestSlider"
+          onClick={() => handleSlideClick("loseyourself")}
+        >
           <div className="image-container">
-            <img src={loseyourself} className="product-image" alt="Lose Yourself" />
+            <img
+              src={loseyourself}
+              className="product-image"
+              alt="Lose Yourself"
+            />
             <button className="add-to-cart">Add to Cart</button>
           </div>
           <div className="product-info">

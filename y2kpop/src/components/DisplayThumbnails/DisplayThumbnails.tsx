@@ -6,12 +6,10 @@ import aespaImage from "../../assets/images/aespa_dashboard.jpg";
 import leserrafimImage from "../../assets/images/lesserafim_dashboard.jpeg";
 import kissoflifeImage from "../../assets/images/kissoflife_dashboard.jpg";
 
-// Define types for Arrow Props
 interface ArrowProps {
   onClick?: () => void;
 }
 
-// Custom Next Arrow
 const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
   return (
     <div className="customArrow nextArrow" onClick={onClick}>
@@ -20,7 +18,6 @@ const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
   );
 };
 
-// Custom Prev Arrow
 const PrevArrow: React.FC<ArrowProps> = ({ onClick }) => {
   return (
     <div className="customArrow prevArrow" onClick={onClick}>

@@ -1,164 +1,258 @@
-/* General layout */
+html,
+body,
 .detailsContainer {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  box-sizing: border-box;
+  height: 100%; /* Ensure the parent container occupies full height */
 }
 
-/* Slider section with header */
+.detailsContainer {
+  display: flex; /* Flexbox layout for equal column heights */
+  height: 100%; /* Full-height container */
+}
+
+.sliderSection,
+.descriptionContainer {
+  height: 100%; /* Equal height for both containers */
+  display: flex; /* Allow content alignment */
+  flex-direction: column; /* Preserve existing layout */
+}
+
+.sliderContainer {
+  flex: 1; /* Stretch to fill available height */
+  display: flex; /* Maintain alignment */
+  flex-direction: column; /* Stack slider content vertically */
+}
+
+.imageSlider {
+  flex: 1; /* Allow the slider to grow and fill space */
+}
+
+.detailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  overflow: hidden; /* Prevent overflowing content */
+  font-family: crazy;
+}
+
 .sliderSection {
-  flex: 1 1 50%;
-  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Ensure no overflow within the slider */
+}
+
+.sliderContainer {
+  width: 100%;
+  overflow: hidden; /* Prevent images from spilling out */
 }
 
 .sliderHeader {
-  border-top: 1px black solid;
-  border-right: black solid 1px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px; /* Space between header and slider */
-  width: 80%;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 10%;
 }
 
 .productId {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1%;
 }
 
-/* Arrow container */
-.arrowContainer {
+.arrow-Container {
+  margin-top: auto;
+  margin-bottom: auto;
   display: flex;
   gap: 10px;
-}
-
-.latestArrow {
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.latestArrow:hover {
-  color: #e63946; /* Change color on hover */
-}
-
-/* Slider container */
-.sliderContainer {
-  position: relative;
+  margin-right: 1%;
 }
 
 .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Ensure image takes full width of the container */
+  margin: auto;
+}
+
+.imageSlider {
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 3%;
+  position: relative; /* Make sure the slider has a position for arrows */
+}
+
+.detailsContainer .product-image {
+  width: 100%; /* Responsive */
+  height: auto; /* Keep aspect ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Style for the custom arrows */
+.detailsContainer .latestArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.detailsContainer .latestNextArrow {
+  right: 10px;
+}
+
+.detailsContainer .latestPrevArrow {
+  left: 10px;
+}
+
+/* Style for dots under the slider */
+.slick-dots {
+  position: absolute;
+  bottom: -30px; /* Adjust spacing between dots and the image */
+  width: 100%;
   text-align: center;
 }
 
-.product-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.slick-dots li button {
+  background-color: #ccc;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
 }
 
-/* Description section */
+.slick-dots li.slick-active button {
+  background-color: #000; /* Active dot */
+}
+
 .descriptionContainer {
-  flex: 1 1 50%;
-  max-width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: flex-start;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
 }
 
-.productTitle h1 {
-  font-size: 2rem;
-  margin: 0;
+.productTitle {
+  width: 100%;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-left: 1%;
 }
 
-.productTitle h3 {
-  font-size: 1.5rem;
-  color: #555;
-}
-
-.productPrice h1 {
-  font-size: 2rem;
-  color: #e63946;
-}
-
-/* Version buttons */
-.versionButtons {
+.productReview {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: row;
+}
+
+.y2kicon {
+  margin: auto 0 auto 0;
+  height: 40px;
+  width: 40px;
+}
+
+.productArtist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.large {
+  font-size: clamp(0.5rem, 1vw, 3rem); /* Responsive font size */
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.medium {
+  font-size: clamp(0.5rem, 1vw, 2rem); /* Responsive font size */
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+.productFinalize {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  justify-content: space-between;
+  padding: 0 3% 1% 1%;
+  border-bottom: 1px solid black;
+}
+
+.versionButtons {
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 0 3% 3% 1%;
 }
 
 .versionButton {
-  padding: 10px 20px;
-  border: 2px solid #ccc;
-  border-radius: 30px;
-  background-color: white;
-  color: black;
-  font-size: 1rem;
+  margin-right: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #ccc;
+  background-color: #fff;
   cursor: pointer;
-  transition: all 0.3s ease;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .versionButton.active {
-  border-color: #e63946;
-  background-color: #e63946;
-  color: white;
-}
-
-/* Quantity and Add to Cart */
-.productFinalize {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  background-color: #000;
+  color: #fff;
 }
 
 .quantity {
   display: flex;
   align-items: center;
-  gap: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 25%;
+  justify-content: space-evenly;
+  margin-top: 1%;
 }
 
 .quantityButton {
-  padding: 10px 15px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
-  background-color: white;
-  color: black;
-  font-size: 1.5rem;
-  font-weight: bold;
+  padding: 0.5rem;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
   cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.quantityButton:hover {
-  background-color: #ccc;
-}
-
-.quantityValue {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
-  width: 30px;
-  text-align: center;
+  outline: inherit;
+  cursor: pointer;
+  font-size: clamp(0.5rem, 1vw, 2rem); /* Responsive font size */
+  margin-right: 1%;
+  margin-left: 1%;
 }
 
 .addToCart {
-  padding: 15px 30px;
-  background-color: #e63946;
-  color: white;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
+  margin-top: 1%;
+  padding: 1rem;
+  width: 70%;
+  background-color: #000;
+  color: #fff;
   text-align: center;
-  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 30px;
 }
 
-.addToCart:hover {
-  background-color: #c71f2d;
+.productShipping {
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding-left: 1%;
+}
+
+.productContent {
+  width: 100%;
+  padding-left: 1%;
+  height: 100%;
+  border-bottom: 1px solid black;
 }
