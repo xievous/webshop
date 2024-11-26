@@ -8,7 +8,7 @@ const Checkout: React.FC = () => {
   const navigate = useNavigate();
   return (
     <div className="checkoutFormContainer">
-      <h2>Checkout</h2>
+      <h2>CHECKOUT</h2>
       <form className="checkoutForm">
         <div className="formField contact">
           <h1>CONTACT</h1>

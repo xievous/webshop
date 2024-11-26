@@ -23,6 +23,7 @@ body {
   background: linear-gradient(to bottom, #e0e0e0, #cfcfcf);
   background-size: cover;
   background-attachment: fixed;
+  text-transform: uppercase;
 }
 
 html {
