@@ -171,3 +171,17 @@ ul li {
   height: 24px;
   width: 24px;
 }
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 2rem;
+  }
+
+  .search-wrapper.active .search-input {
+    width: 100px;
+  }
+
+  .dropdown-section {
+    margin: 1%;
+  }
+}

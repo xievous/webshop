@@ -254,3 +254,26 @@ body,
   height: 100%;
   border-bottom: 1px solid black;
 }
+
+.versionButton {
+  font-family: crazy;
+}
+
+@media (max-width: 480px) {
+  .detailsContainer {
+    grid-template-columns: auto;
+  }
+
+  .detailsContainer .latestArrow {
+    height: 20px;
+    width: 20px;
+  }
+
+  .large {
+    font-size: 16px;
+  }
+
+  .quantityButton {
+    font-size: 16px;
+  }
+}

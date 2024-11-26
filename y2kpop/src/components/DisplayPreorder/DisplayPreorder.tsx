@@ -50,6 +50,22 @@ const DisplayPreorder: React.FC = () => {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 480, // for screens 480px or smaller
+        settings: {
+          slidesToShow: 2, // show 2 slides instead of 4
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // for screens 768px or smaller
+        settings: {
+          slidesToShow: 3, // optionally define behavior for other widths
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const handleSlideClick = (productId: string) => {

@@ -26,3 +26,9 @@
   bottom: 10px;
   opacity: 1;
 }
+
+@media (max-width: 480px) {
+  .merchContainer {
+    font-size: 1rem;
+  }
+}

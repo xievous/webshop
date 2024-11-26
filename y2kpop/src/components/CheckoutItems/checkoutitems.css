@@ -84,3 +84,42 @@
   border-top: 1px solid black;
   padding-top: 10px;
 }
+
+@media (max-width: 480px) {
+  .overviewContainer {
+    display: block;
+  }
+  .overviewProducts {
+    width: 100%;
+  }
+
+  .productDescription h1 {
+    font-size: 16px;
+  }
+
+  .productPricing p {
+    font-size: 16px;
+  }
+
+  .amountButton {
+    width: 50%;
+  }
+
+  .amountButton span {
+    font-size: 16px;
+  }
+
+  .totalContainer {
+    width: auto;
+    margin-left: 1%;
+    font-size: 16px;
+  }
+
+  .totalPrice {
+    font-size: 16px;
+  }
+
+  .totalCheckout button {
+    font-size: 16px;
+  }
+}

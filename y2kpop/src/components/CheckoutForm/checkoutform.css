@@ -111,3 +111,20 @@
 .formField {
   margin-top: 3%;
 }
+
+@media (max-width: 480px) {
+  .checkoutSummaryContainer {
+    width: auto !important;
+  }
+  .checkout {
+    flex-direction: column-reverse;
+  }
+
+  .checkoutFormContainer {
+    width: auto;
+  }
+
+  .amountButton {
+    width: 50%;
+  }
+}

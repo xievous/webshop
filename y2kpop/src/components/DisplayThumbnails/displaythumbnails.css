@@ -143,3 +143,74 @@
   font-family: savage;
   font-size: clamp(1.5rem, 2vw + 1rem, 8rem);
 }
+
+/* Add media query for smaller devices */
+@media (max-width: 768px) {
+  .carouselContainer {
+    width: 100%;
+  }
+
+  .carouselImage {
+    height: 300px;
+  }
+
+  .carouselSlide h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .buttonContainer {
+    padding: 5px;
+    gap: 5px;
+    opacity: 1;
+  }
+
+  .viewDetails,
+  .shopNow {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
+/* Further adjustments for very small devices */
+@media (max-width: 480px) {
+  .title {
+    font-size: 7rem;
+  }
+
+  .carouselImage {
+    border-radius: 0;
+  }
+
+  .carouselContainer h1 {
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+
+  .customArrow {
+    position: absolute;
+    top: 6%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s;
+  }
+
+  .prevArrow {
+    left: 330px;
+  }
+
+  .buttonContainer {
+    padding: 5px;
+    gap: 5px;
+    opacity: 1;
+  }
+}

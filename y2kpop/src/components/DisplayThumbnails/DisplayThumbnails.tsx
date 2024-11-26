@@ -40,7 +40,7 @@ const DisplayThumbnails: React.FC = () => {
 
   return (
     <section className="carouselContainer">
-      <h1>DISCOVER</h1>
+      <h1 className="title">DISCOVER</h1>
       <Slider {...settings}>
         <div className="carouselSlide">
           <h1>NewJeans</h1>

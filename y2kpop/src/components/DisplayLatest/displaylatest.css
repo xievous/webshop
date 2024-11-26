@@ -159,7 +159,6 @@
   transform: scale(1.05);
 }
 
-/* Navigation Arrows */
 .arrowContainer {
   display: flex;
   gap: 10px;
@@ -184,12 +183,16 @@
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Slider Track and Thumb */
-.slider-track {
-  display: flex;
-  gap: 16px;
-}
+@media (max-width: 480px) {
+  .product-info {
+    font-size: 0.6rem;
+  }
 
-.slider-thumb {
-  display: none; /* Remove dots */
+  .latestContainer {
+    font-size: 0.8rem;
+  }
+
+  .buttonContainer {
+    opacity: 1;
+  }
 }

@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "./displayconfirmation.css";
 
 export default function DisplayConfirmation() {
+  const navigate = useNavigate();
+
   return (
     <>
       <section className="confirmationPageContainer">
@@ -58,7 +61,12 @@ export default function DisplayConfirmation() {
               <span>Total</span>
               <span>528KR</span>
             </div>
-            <button className="continueShoppingBtn">Continue Shopping</button>
+            <button
+              className="continueShoppingBtn"
+              onClick={() => navigate("/")}
+            >
+              Continue Shopping
+            </button>
           </div>
         </div>
       </section>

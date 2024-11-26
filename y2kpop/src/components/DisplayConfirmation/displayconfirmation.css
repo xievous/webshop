@@ -26,6 +26,7 @@
 .orderSummaryContainer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
@@ -89,4 +90,12 @@
 
 .continueShoppingBtn:hover {
   background-color: #333;
+}
+
+@media (max-width: 480px) {
+  .orderDetailsCard,
+  .shippingDetailsCard,
+  .orderSummaryCard {
+    width: 100%;
+  }
 }

@@ -26,3 +26,17 @@
   bottom: 10px;
   opacity: 1;
 }
+
+@media (max-width: 480px) {
+  .product-info {
+    font-size: 0.6rem;
+  }
+
+  .preContainer {
+    font-size: 0.8rem;
+  }
+
+  .buttonContainer {
+    opacity: 1;
+  }
+}
