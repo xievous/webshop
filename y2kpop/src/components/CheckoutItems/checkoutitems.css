@@ -103,6 +103,7 @@
 
   .amountButton {
     width: 50%;
+    padding: 10px;
   }
 
   .amountButton span {
@@ -121,5 +122,9 @@
 
   .totalCheckout button {
     font-size: 16px;
+  }
+
+  .overviewColumn {
+    font-size: 1.5rem;
   }
 }
