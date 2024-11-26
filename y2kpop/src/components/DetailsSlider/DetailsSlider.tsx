@@ -87,7 +87,7 @@ const DetailsSlider: React.FC = () => {
             <h1 className="large">NEW JEANS</h1>
           </div>
           <div className="productReview">
-            <h1>REVIEW: 5</h1>
+            <h1>REVIEW: </h1>
             <img src={star} className="y2kicon" alt="" />
             <img src={star} className="y2kicon" alt="" />
             <img src={star} className="y2kicon" alt="" />
